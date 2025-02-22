@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOUR QR GENERATOR</title>
+    <script src="script.js"></script>
 </head>
-<style>
-    .welcome-page{
-        
-    }
-</style>
+<link rel="stylesheet" href="style.css">
+
 <body>
-    <h1 class="welcome-page">HELLO WELCOME TO QR GENRATOR WEBSITE</h1>
-    <h2>HEllo</h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <div class="main-container">
+        <div class="container">
+            <div id="qrBox" class="left"><img src="./icongr.webp" alt=""> </div>
+            <div class="right">
+                <h1>QR GENERATOR</h1>
+                <input class="input" id="input_box" type="text" placeholder="Enter text or URL">
+                <button onclick="genQr()">Generate QR Code</button>
+            </div>
+        </div>
+    
+    </div>
 </body>
+
 </html>
